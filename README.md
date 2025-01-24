@@ -14,12 +14,12 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/PDF_Analyzer.git
+   git clone https://github.com/teckyonAI/AI_PDF_Analyzer.git
 
    
 2. Navigate to the project directory:
    ```bash
-   cd WhatsApp_Chat_Analyzer
+   cd AI_PDF_Analyzer
 
 3. Install the required dependencies:
     ```bash
