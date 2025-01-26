@@ -1,16 +1,17 @@
-# Rephrasing Tool: AI-Powered Text Paraphraser
+# PDF Analyzer: Extract and Analyze Insights Using OpenAI
 
-Effortlessly rephrase and paraphrase text with this AI-driven tool. Designed for writers, students, and professionals, it ensures your text is clear, concise, and tailored to your desired tone or style. Whether you're creating content, improving clarity, or avoiding plagiarism, this tool has you covered.
+Simplify document analysis with this powerful PDF Analyzer. By leveraging OpenAI's advanced language models, this tool enables researchers, students, and professionals to extract, summarize, and analyze insights from lengthy PDF documents. Transform complex data into actionable insights effortlessly.
 
 ---
 
 ## Features
 
-- **AI-Powered Paraphrasing**: Uses advanced natural language processing (NLP) models to rephrase sentences while preserving their original meaning.
-- **Customizable Output**: Allows users to adjust the tone (e.g., formal, casual) or style of the paraphrased text for different contexts.
-- **Interactive Interface**: User-friendly web application for entering and processing text with real-time results.
-- **Multi-Language Support**: Supports paraphrasing in multiple languages for global usability.
-- **Deployment Ready**: Configured for easy deployment on cloud platforms like Heroku, enabling accessibility from anywhere.
+- **Content Extraction**: Efficiently extracts text content from PDFs, preserving structure and formatting.
+- **Summarization**: Creates concise summaries of long documents, saving time and effort.
+- **Key Insights Identification**: Automatically highlights crucial points, topics, and sections for focused analysis.
+- **Custom Queries**: Ask specific questions about the document content and receive direct answers.
+- **Interactive Application**: User-friendly interface for uploading and analyzing PDFs.
+- **Multi-Language Support**: Analyze documents in multiple languages supported by OpenAI models.
 
 ---
 
@@ -18,42 +19,48 @@ Effortlessly rephrase and paraphrase text with this AI-driven tool. Designed for
 
 This project is built with:
 - **Python**: Core programming language.
-- **Hugging Face Transformers**: For leveraging pre-trained NLP models like GPT and T5.
-- **Flask**: To develop a lightweight, interactive web application.
-- **Pandas & NumPy**: For handling text preprocessing and optimization.
-- **Streamlit**: Optional interactive interface for quick deployment.
-- **Heroku**: For scalable cloud deployment.
+- **PyPDF2**: For extracting text content from PDF files.
+- **OpenAI API**: For generating summaries and answering document-related queries.
+- **Flask**: To develop an interactive web application.
+- **dotenv**: For securely managing API keys.
+- **Streamlit**: Optional tool for creating an intuitive interface.
+- **Matplotlib & Seaborn**: For visualizing document insights.
 
 ---
 
 ## Dataset
 
-The tool can work with any textual dataset provided by the user. For training and fine-tuning (if required), public datasets such as Quora Question Pairs and ParaNMT can be utilized.
+This tool processes PDF documents provided by the user. Here’s how the content is handled:
+- **Text Extraction**: Extracts paragraphs, headings, and tables (if supported).
+- **Sections Identified**: Breaks down content into logical sections for targeted analysis.
+- **Output Format**: Summaries and key points are displayed directly in the app or saved as a downloadable file.
 
-### Dataset Example:
-Original Sentence:  
-*"AI is revolutionizing industries across the globe."*  
-Paraphrased Sentence:  
-*"Artificial intelligence is transforming businesses worldwide."*
+Example output from a document:
+- **Title**: "Artificial Intelligence in Healthcare"
+- **Summary**: "This document discusses AI applications in diagnosis, treatment planning, and patient monitoring, highlighting ethical considerations."
+- **Key Insights**:
+  - "AI improves diagnostic accuracy by 40%."
+  - "Ethical challenges include data privacy and bias."
 
 ---
 
 ## Challenges Addressed
 
-- **Text Clarity**: Enhances readability by simplifying complex sentences.
-- **Avoiding Redundancy**: Rephrases redundant text into concise formats.
-- **Contextual Accuracy**: Preserves the meaning of sentences during rephrasing, ensuring contextual relevance.
-- **Customization Needs**: Provides tailored outputs for academic, professional, or casual contexts.
+- **Long Document Analysis**: Simplifies reviewing lengthy PDFs with automated summaries and insights.
+- **Time Efficiency**: Reduces the time spent reading and extracting key information manually.
+- **Query-based Insights**: Enables targeted analysis with custom queries for specific document sections.
 
 ---
 
 ## Results
 
-- **Enhanced Readability**: Simplified sentences without losing meaning.
-- **Tone Adaptability**: Successfully adjusts tone and style based on user preference.
-- **Multilingual Capability**: Supports rephrasing in multiple languages (depending on the pre-trained model).
+The tool delivers the following outcomes:
+- **Accurate Summaries**: Precise, contextually relevant document summaries.
+- **Key Points Identification**: Extracts the most important information for quick decision-making.
+- **Streamlined Analysis**: Provides a seamless workflow for processing complex documents.
 
 ---
+
 
 ## Installation
 
